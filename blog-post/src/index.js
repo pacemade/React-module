@@ -6,7 +6,7 @@ import Post from './App';
 
 var post = {
   title: "This is a book",
-  author: "Author Man",
+  authors: ["Author Man", "Author Woman", "Author Person"],
   body: "Issa body property",
   comments: ["...", "not bad would try again", "what a poo poo book never again"]
 }
@@ -14,7 +14,7 @@ var post = {
 ReactDOM.render(
   <Post
     title={post.title}
-    author={post.author}
+    allAuthors={post.authors}
     body={post.body}
     comments={post.comments}
   />,
